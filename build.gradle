@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id "me.champeau.jmh" version "0.6.6"
+}
+
+targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_8
+
+group 'io.github.nevalackin'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    jmh 'org.openjdk.jmh:jmh-core:1.35'
+    jmh 'org.openjdk.jmh:jmh-generator-annprocess:1.35'
+}
