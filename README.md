@@ -2,6 +2,39 @@
 
 A faster, simpler, dependency-less pub-sub event bus.
 
+## Get It
+Get it via [JitPack](https://jitpack.io/):
+#### Maven
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+```xml
+<dependencies>
+    <dependency>
+        <groupId>io.github.nevalackin</groupId>
+        <artifactId>radbus</artifactId>
+        <version>1.0.0</version>
+    </dependency> 
+</dependencies>
+```
+#### Gradle
+```groovy
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+```
+```groovy
+dependencies {
+    implementation 'io.github.nevalackin:radbus:1.0.0'
+}
+```
+or via the prebuilt artifacts on the [releases page](https://github.com/nevalackin/radbus/releases/latest).
+
 ## Benchmark Results
 
 Results were obtained using the JMH benchmarking framework, the benchmark code is available in
